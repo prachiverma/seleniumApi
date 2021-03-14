@@ -1,0 +1,388 @@
+<html>
+<head>
+<title>TestNG:  APITests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>APITests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>7/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Mar 14 14:00:23 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>19 seconds (19115 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.test.api.Account.deletetUser()'><b>deletetUser</b><br>Test class: com.test.api.Account<br/>
+<a href="#Output-2063581529" onClick='toggleBox("Output-2063581529", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2063581529" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2063581529">
+Started execution of test delete user for id c5facf8c-01cf-474d-82ae-f262735b7a3d<br/>
+/Account/v1/User<br/>
+{"code":"1200","message":"User not authorized!"}<br/>
+Verified response code 200<br/>
+</div>
+</td>
+<td><div><pre>junit.framework.AssertionFailedError: expected:&lt;200&gt; but was:&lt;401&gt;
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.failNotEquals(Assert.java:287)
+	at junit.framework.Assert.assertEquals(Assert.java:67)
+	at junit.framework.Assert.assertEquals(Assert.java:199)
+	at junit.framework.Assert.assertEquals(Assert.java:205)
+	at com.framework.util.BaseAPITest.verifyResponseCodeAndContentType(BaseAPITest.java:148)
+	at com.test.api.Account.deletetUser(Account.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2063581529", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2063581529'><pre>junit.framework.AssertionFailedError: expected:&lt;200&gt; but was:&lt;401&gt;
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.failNotEquals(Assert.java:287)
+	at junit.framework.Assert.assertEquals(Assert.java:67)
+	at junit.framework.Assert.assertEquals(Assert.java:199)
+	at junit.framework.Assert.assertEquals(Assert.java:205)
+	at com.framework.util.BaseAPITest.verifyResponseCodeAndContentType(BaseAPITest.java:148)
+	at com.test.api.Account.deletetUser(Account.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+</pre></div></td>
+<td>0</td>
+<td>com.test.api.Account@50f8360d</td></tr>
+<tr>
+<td title='com.test.api.Account.getUserById()'><b>getUserById</b><br>Test class: com.test.api.Account<br/>
+<a href="#Output-1426974392" onClick='toggleBox("Output-1426974392", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1426974392" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1426974392">
+Started execution of test get user details for id c5facf8c-01cf-474d-82ae-f262735b7a3d<br/>
+/Account/v1/User<br/>
+{"code":"1200","message":"User not authorized!"}<br/>
+Verified response code 200<br/>
+</div>
+</td>
+<td><div><pre>junit.framework.AssertionFailedError: expected:&lt;200&gt; but was:&lt;401&gt;
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.failNotEquals(Assert.java:287)
+	at junit.framework.Assert.assertEquals(Assert.java:67)
+	at junit.framework.Assert.assertEquals(Assert.java:199)
+	at junit.framework.Assert.assertEquals(Assert.java:205)
+	at com.framework.util.BaseAPITest.verifyResponseCodeAndContentType(BaseAPITest.java:148)
+	at com.test.api.Account.getUserById(Account.java:86)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1426974392", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1426974392'><pre>junit.framework.AssertionFailedError: expected:&lt;200&gt; but was:&lt;401&gt;
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.failNotEquals(Assert.java:287)
+	at junit.framework.Assert.assertEquals(Assert.java:67)
+	at junit.framework.Assert.assertEquals(Assert.java:199)
+	at junit.framework.Assert.assertEquals(Assert.java:205)
+	at com.framework.util.BaseAPITest.verifyResponseCodeAndContentType(BaseAPITest.java:148)
+	at com.test.api.Account.getUserById(Account.java:86)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+</pre></div></td>
+<td>0</td>
+<td>com.test.api.Account@50f8360d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.test.api.Account.createUser()'><b>createUser</b><br>Test class: com.test.api.Account<br/>
+<a href="#Output-1992630936" onClick='toggleBox("Output-1992630936", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1992630936" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1992630936">
+Started execution of test create user<br/>
+/Account/v1/User<br/>
+{"userID":"c5facf8c-01cf-474d-82ae-f262735b7a3d","username":"test1615710625569","books":[]}<br/>
+Verified response code 201<br/>
+Verified content type application/json<br/>
+Verify user name is response body<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>com.test.api.Account@50f8360d</td></tr>
+<tr>
+<td title='com.test.api.DataDrivenAPI.createUser()'><b>createUser</b><br>Test class: com.test.api.DataDrivenAPI<br>Parameters: User1111, P@ssw0rd<br/>
+<a href="#Output-1110103522" onClick='toggleBox("Output-1110103522", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1110103522" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1110103522">
+Started execution of test create user<br/>
+/Account/v1/User<br/>
+{"userID":"496bdcd6-63f8-4557-b451-49b4fef7af70","username":"User1111","books":[]}<br/>
+Verified response code 201<br/>
+Verified content type application/json<br/>
+Verify user name is response body<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.test.api.DataDrivenAPI@13c78c0b</td></tr>
+<tr>
+<td title='com.test.api.DataDrivenAPI.createUser()'><b>createUser</b><br>Test class: com.test.api.DataDrivenAPI<br>Parameters: User2222, P@ssw0rd<br/>
+<a href="#Output-848484634" onClick='toggleBox("Output-848484634", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-848484634" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-848484634">
+Started execution of test create user<br/>
+/Account/v1/User<br/>
+{"userID":"0585f1a0-8f0a-4e2b-b028-06ded24a1188","username":"User2222","books":[]}<br/>
+Verified response code 201<br/>
+Verified content type application/json<br/>
+Verify user name is response body<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.test.api.DataDrivenAPI@13c78c0b</td></tr>
+<tr>
+<td title='com.test.api.DataDrivenAPI.createUser()'><b>createUser</b><br>Test class: com.test.api.DataDrivenAPI<br>Parameters: User3333, P@ssw0rd<br/>
+<a href="#Output-1200812313" onClick='toggleBox("Output-1200812313", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1200812313" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1200812313">
+Started execution of test create user<br/>
+/Account/v1/User<br/>
+{"userID":"a72e3170-4b8e-4f5e-af89-7252edd17371","username":"User3333","books":[]}<br/>
+Verified response code 201<br/>
+Verified content type application/json<br/>
+Verify user name is response body<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.test.api.DataDrivenAPI@13c78c0b</td></tr>
+<tr>
+<td title='com.test.api.DataDrivenAPI.createUser()'><b>createUser</b><br>Test class: com.test.api.DataDrivenAPI<br>Parameters: User4444, P@ssw0rd<br/>
+<a href="#Output-783130773" onClick='toggleBox("Output-783130773", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-783130773" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-783130773">
+Started execution of test create user<br/>
+/Account/v1/User<br/>
+{"userID":"c720410c-5897-45c6-90d9-bb4276fb6dcd","username":"User4444","books":[]}<br/>
+Verified response code 201<br/>
+Verified content type application/json<br/>
+Verify user name is response body<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.test.api.DataDrivenAPI@13c78c0b</td></tr>
+<tr>
+<td title='com.test.api.Account.getAth()'><b>getAth</b><br>Test class: com.test.api.Account<br/>
+<a href="#Output-873295241" onClick='toggleBox("Output-873295241", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-873295241" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-873295241">
+Started execution of test get auth<br/>
+/Account/v1/Authorized<br/>
+true<br/>
+Verified response code 200<br/>
+Verified content type application/json<br/>
+Verify response is true<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.test.api.Account@50f8360d</td></tr>
+<tr>
+<td title='com.test.api.Account.verifyUnAuthUser()'><b>verifyUnAuthUser</b><br>Test class: com.test.api.Account<br/>
+<a href="#Output-1987418535" onClick='toggleBox("Output-1987418535", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1987418535" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1987418535">
+Started execution of test create user without body<br/>
+/Account/v1/User<br/>
+{"code":"1200","message":"UserName and Password required."}<br/>
+Verify user name is response body<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.test.api.Account@50f8360d</td></tr>
+</table><p>
+</body>
+</html>

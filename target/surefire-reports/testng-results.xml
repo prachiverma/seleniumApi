@@ -1,0 +1,841 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" total="11" passed="9">
+  <reporter-output>
+    <line>
+      <![CDATA[
+login into application with user name prachi.verma]]>
+    </line>
+    <line>
+      <![CDATA[
+Verify user prachi.verma login successfully]]>
+    </line>
+    <line>
+      <![CDATA[
+Select book store menu]]>
+    </line>
+    <line>
+      <![CDATA[
+Search book Git Pocket Guide]]>
+    </line>
+    <line>
+      <![CDATA[
+Select book Git Pocket Guide]]>
+    </line>
+    <line>
+      <![CDATA[
+Add Git Pocket Guide to your collection]]>
+    </line>
+    <line>
+      <![CDATA[
+Click on profile menu]]>
+    </line>
+    <line>
+      <![CDATA[
+Verify book added]]>
+    </line>
+    <line>
+      <![CDATA[
+remove book from profile]]>
+    </line>
+    <line>
+      <![CDATA[
+verify book removed from profile]]>
+    </line>
+    <line>
+      <![CDATA[
+login into application with user name prachi.verma]]>
+    </line>
+    <line>
+      <![CDATA[
+Verify user prachi.verma not login successfully]]>
+    </line>
+    <line>
+      <![CDATA[Started execution of test create user]]>
+    </line>
+    <line>
+      <![CDATA[/Account/v1/User]]>
+    </line>
+    <line>
+      <![CDATA[{"userID":"c5facf8c-01cf-474d-82ae-f262735b7a3d","username":"test1615710625569","books":[]}]]>
+    </line>
+    <line>
+      <![CDATA[Verified response code 201]]>
+    </line>
+    <line>
+      <![CDATA[Verified content type application/json]]>
+    </line>
+    <line>
+      <![CDATA[Verify user name is response body]]>
+    </line>
+    <line>
+      <![CDATA[Started execution of test get auth]]>
+    </line>
+    <line>
+      <![CDATA[/Account/v1/Authorized]]>
+    </line>
+    <line>
+      <![CDATA[true]]>
+    </line>
+    <line>
+      <![CDATA[Verified response code 200]]>
+    </line>
+    <line>
+      <![CDATA[Verified content type application/json]]>
+    </line>
+    <line>
+      <![CDATA[Verify response is true]]>
+    </line>
+    <line>
+      <![CDATA[Started execution of test create user without body]]>
+    </line>
+    <line>
+      <![CDATA[/Account/v1/User]]>
+    </line>
+    <line>
+      <![CDATA[{"code":"1200","message":"UserName and Password required."}]]>
+    </line>
+    <line>
+      <![CDATA[Verify user name is response body]]>
+    </line>
+    <line>
+      <![CDATA[Started execution of test get user details for id c5facf8c-01cf-474d-82ae-f262735b7a3d]]>
+    </line>
+    <line>
+      <![CDATA[/Account/v1/User]]>
+    </line>
+    <line>
+      <![CDATA[{"code":"1200","message":"User not authorized!"}]]>
+    </line>
+    <line>
+      <![CDATA[Verified response code 200]]>
+    </line>
+    <line>
+      <![CDATA[Started execution of test delete user for id c5facf8c-01cf-474d-82ae-f262735b7a3d]]>
+    </line>
+    <line>
+      <![CDATA[/Account/v1/User]]>
+    </line>
+    <line>
+      <![CDATA[{"code":"1200","message":"User not authorized!"}]]>
+    </line>
+    <line>
+      <![CDATA[Verified response code 200]]>
+    </line>
+    <line>
+      <![CDATA[Started execution of test create user]]>
+    </line>
+    <line>
+      <![CDATA[/Account/v1/User]]>
+    </line>
+    <line>
+      <![CDATA[{"userID":"496bdcd6-63f8-4557-b451-49b4fef7af70","username":"User1111","books":[]}]]>
+    </line>
+    <line>
+      <![CDATA[Verified response code 201]]>
+    </line>
+    <line>
+      <![CDATA[Verified content type application/json]]>
+    </line>
+    <line>
+      <![CDATA[Verify user name is response body]]>
+    </line>
+    <line>
+      <![CDATA[Started execution of test create user]]>
+    </line>
+    <line>
+      <![CDATA[/Account/v1/User]]>
+    </line>
+    <line>
+      <![CDATA[{"userID":"0585f1a0-8f0a-4e2b-b028-06ded24a1188","username":"User2222","books":[]}]]>
+    </line>
+    <line>
+      <![CDATA[Verified response code 201]]>
+    </line>
+    <line>
+      <![CDATA[Verified content type application/json]]>
+    </line>
+    <line>
+      <![CDATA[Verify user name is response body]]>
+    </line>
+    <line>
+      <![CDATA[Started execution of test create user]]>
+    </line>
+    <line>
+      <![CDATA[/Account/v1/User]]>
+    </line>
+    <line>
+      <![CDATA[{"userID":"a72e3170-4b8e-4f5e-af89-7252edd17371","username":"User3333","books":[]}]]>
+    </line>
+    <line>
+      <![CDATA[Verified response code 201]]>
+    </line>
+    <line>
+      <![CDATA[Verified content type application/json]]>
+    </line>
+    <line>
+      <![CDATA[Verify user name is response body]]>
+    </line>
+    <line>
+      <![CDATA[Started execution of test create user]]>
+    </line>
+    <line>
+      <![CDATA[/Account/v1/User]]>
+    </line>
+    <line>
+      <![CDATA[{"userID":"c720410c-5897-45c6-90d9-bb4276fb6dcd","username":"User4444","books":[]}]]>
+    </line>
+    <line>
+      <![CDATA[Verified response code 201]]>
+    </line>
+    <line>
+      <![CDATA[Verified content type application/json]]>
+    </line>
+    <line>
+      <![CDATA[Verify user name is response body]]>
+    </line>
+  </reporter-output>
+  <suite name="TestSuite" duration-ms="96413" started-at="2021-03-14T08:29:06Z" finished-at="2021-03-14T08:30:42Z">
+    <groups>
+    </groups>
+    <test name="UITests" duration-ms="75970" started-at="2021-03-14T08:29:06Z" finished-at="2021-03-14T08:30:22Z">
+      <class name="com.test.selenium.Login">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.test.selenium.Login@783e6358]" name="setUp" is-config="true" duration-ms="5300" started-at="2021-03-14T14:00:10Z" finished-at="2021-03-14T14:00:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setTest(java.lang.reflect.Method)[pri:0, instance:com.test.selenium.Login@783e6358]" name="setTest" is-config="true" duration-ms="3796" started-at="2021-03-14T14:00:15Z" finished-at="2021-03-14T14:00:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.selenium.Login.testVerifyFailed()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTest -->
+        <test-method status="PASS" signature="testVerifyFailed()[pri:0, instance:com.test.selenium.Login@783e6358]" name="testVerifyFailed" duration-ms="1884" started-at="2021-03-14T14:00:19Z" finished-at="2021-03-14T14:00:21Z">
+          <reporter-output>
+            <line>
+              <![CDATA[
+login into application with user name prachi.verma]]>
+            </line>
+            <line>
+              <![CDATA[
+Verify user prachi.verma not login successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testVerifyFailed -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.test.selenium.Login@783e6358]" name="afterClass" is-config="true" duration-ms="1222" started-at="2021-03-14T14:00:21Z" finished-at="2021-03-14T14:00:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.test.selenium.Login -->
+      <class name="com.test.selenium.AddVerifyBook">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.test.selenium.AddVerifyBook@4e04a765]" name="setUp" is-config="true" duration-ms="15249" started-at="2021-03-14T13:59:06Z" finished-at="2021-03-14T13:59:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setTest(java.lang.reflect.Method)[pri:0, instance:com.test.selenium.AddVerifyBook@4e04a765]" name="setTest" is-config="true" duration-ms="4243" started-at="2021-03-14T13:59:21Z" finished-at="2021-03-14T13:59:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.selenium.AddVerifyBook.TestAddAndRemoveBookInCollection()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTest -->
+        <test-method status="PASS" signature="TestAddAndRemoveBookInCollection()[pri:0, instance:com.test.selenium.AddVerifyBook@4e04a765]" name="TestAddAndRemoveBookInCollection" duration-ms="42658" started-at="2021-03-14T13:59:26Z" finished-at="2021-03-14T14:00:08Z">
+          <reporter-output>
+            <line>
+              <![CDATA[
+login into application with user name prachi.verma]]>
+            </line>
+            <line>
+              <![CDATA[
+Verify user prachi.verma login successfully]]>
+            </line>
+            <line>
+              <![CDATA[
+Select book store menu]]>
+            </line>
+            <line>
+              <![CDATA[
+Search book Git Pocket Guide]]>
+            </line>
+            <line>
+              <![CDATA[
+Select book Git Pocket Guide]]>
+            </line>
+            <line>
+              <![CDATA[
+Add Git Pocket Guide to your collection]]>
+            </line>
+            <line>
+              <![CDATA[
+Click on profile menu]]>
+            </line>
+            <line>
+              <![CDATA[
+Verify book added]]>
+            </line>
+            <line>
+              <![CDATA[
+remove book from profile]]>
+            </line>
+            <line>
+              <![CDATA[
+verify book removed from profile]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TestAddAndRemoveBookInCollection -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.test.selenium.AddVerifyBook@4e04a765]" name="afterClass" is-config="true" duration-ms="1463" started-at="2021-03-14T14:00:08Z" finished-at="2021-03-14T14:00:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.test.selenium.AddVerifyBook -->
+    </test> <!-- UITests -->
+    <test name="APITests" duration-ms="19115" started-at="2021-03-14T08:30:23Z" finished-at="2021-03-14T08:30:42Z">
+      <class name="com.test.api.DataDrivenAPI">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.api.DataDrivenAPI@13c78c0b]" name="setup" is-config="true" duration-ms="0" started-at="2021-03-14T14:00:36Z" finished-at="2021-03-14T14:00:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="createUser(java.lang.String, java.lang.String)[pri:0, instance:com.test.api.DataDrivenAPI@13c78c0b]" name="createUser" duration-ms="914" started-at="2021-03-14T14:00:39Z" data-provider="UserData" finished-at="2021-03-14T14:00:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User1111]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[P@ssw0rd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Started execution of test create user]]>
+            </line>
+            <line>
+              <![CDATA[/Account/v1/User]]>
+            </line>
+            <line>
+              <![CDATA[{"userID":"496bdcd6-63f8-4557-b451-49b4fef7af70","username":"User1111","books":[]}]]>
+            </line>
+            <line>
+              <![CDATA[Verified response code 201]]>
+            </line>
+            <line>
+              <![CDATA[Verified content type application/json]]>
+            </line>
+            <line>
+              <![CDATA[Verify user name is response body]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createUser -->
+        <test-method status="PASS" signature="setupMethod(java.lang.reflect.Method)[pri:0, instance:com.test.api.DataDrivenAPI@13c78c0b]" name="setupMethod" is-config="true" duration-ms="0" started-at="2021-03-14T14:00:39Z" finished-at="2021-03-14T14:00:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.api.DataDrivenAPI.createUser(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupMethod -->
+        <test-method status="PASS" signature="setupMethod(java.lang.reflect.Method)[pri:0, instance:com.test.api.DataDrivenAPI@13c78c0b]" name="setupMethod" is-config="true" duration-ms="1" started-at="2021-03-14T14:00:40Z" finished-at="2021-03-14T14:00:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.api.DataDrivenAPI.createUser(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupMethod -->
+        <test-method status="PASS" signature="testAfterMethod(org.testng.ITestResult)[pri:0, instance:com.test.api.DataDrivenAPI@13c78c0b]" name="testAfterMethod" is-config="true" duration-ms="0" started-at="2021-03-14T14:00:40Z" finished-at="2021-03-14T14:00:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createUser status=SUCCESS method=DataDrivenAPI.createUser(java.lang.String, java.lang.String)[pri:0, instance:com.test.api.DataDrivenAPI@13c78c0b] output=Started execution of test create user]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAfterMethod -->
+        <test-method status="PASS" signature="createUser(java.lang.String, java.lang.String)[pri:0, instance:com.test.api.DataDrivenAPI@13c78c0b]" name="createUser" duration-ms="852" started-at="2021-03-14T14:00:40Z" data-provider="UserData" finished-at="2021-03-14T14:00:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User2222]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[P@ssw0rd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Started execution of test create user]]>
+            </line>
+            <line>
+              <![CDATA[/Account/v1/User]]>
+            </line>
+            <line>
+              <![CDATA[{"userID":"0585f1a0-8f0a-4e2b-b028-06ded24a1188","username":"User2222","books":[]}]]>
+            </line>
+            <line>
+              <![CDATA[Verified response code 201]]>
+            </line>
+            <line>
+              <![CDATA[Verified content type application/json]]>
+            </line>
+            <line>
+              <![CDATA[Verify user name is response body]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createUser -->
+        <test-method status="PASS" signature="testAfterMethod(org.testng.ITestResult)[pri:0, instance:com.test.api.DataDrivenAPI@13c78c0b]" name="testAfterMethod" is-config="true" duration-ms="0" started-at="2021-03-14T14:00:41Z" finished-at="2021-03-14T14:00:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createUser status=SUCCESS method=DataDrivenAPI.createUser(java.lang.String, java.lang.String)[pri:0, instance:com.test.api.DataDrivenAPI@13c78c0b] output=Started execution of test create user]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAfterMethod -->
+        <test-method status="PASS" signature="setupMethod(java.lang.reflect.Method)[pri:0, instance:com.test.api.DataDrivenAPI@13c78c0b]" name="setupMethod" is-config="true" duration-ms="1" started-at="2021-03-14T14:00:41Z" finished-at="2021-03-14T14:00:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.api.DataDrivenAPI.createUser(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupMethod -->
+        <test-method status="PASS" signature="createUser(java.lang.String, java.lang.String)[pri:0, instance:com.test.api.DataDrivenAPI@13c78c0b]" name="createUser" duration-ms="895" started-at="2021-03-14T14:00:41Z" data-provider="UserData" finished-at="2021-03-14T14:00:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User3333]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[P@ssw0rd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Started execution of test create user]]>
+            </line>
+            <line>
+              <![CDATA[/Account/v1/User]]>
+            </line>
+            <line>
+              <![CDATA[{"userID":"a72e3170-4b8e-4f5e-af89-7252edd17371","username":"User3333","books":[]}]]>
+            </line>
+            <line>
+              <![CDATA[Verified response code 201]]>
+            </line>
+            <line>
+              <![CDATA[Verified content type application/json]]>
+            </line>
+            <line>
+              <![CDATA[Verify user name is response body]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createUser -->
+        <test-method status="PASS" signature="testAfterMethod(org.testng.ITestResult)[pri:0, instance:com.test.api.DataDrivenAPI@13c78c0b]" name="testAfterMethod" is-config="true" duration-ms="0" started-at="2021-03-14T14:00:41Z" finished-at="2021-03-14T14:00:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createUser status=SUCCESS method=DataDrivenAPI.createUser(java.lang.String, java.lang.String)[pri:0, instance:com.test.api.DataDrivenAPI@13c78c0b] output=Started execution of test create user]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAfterMethod -->
+        <test-method status="PASS" signature="setupMethod(java.lang.reflect.Method)[pri:0, instance:com.test.api.DataDrivenAPI@13c78c0b]" name="setupMethod" is-config="true" duration-ms="1" started-at="2021-03-14T14:00:41Z" finished-at="2021-03-14T14:00:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.api.DataDrivenAPI.createUser(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupMethod -->
+        <test-method status="PASS" signature="createUser(java.lang.String, java.lang.String)[pri:0, instance:com.test.api.DataDrivenAPI@13c78c0b]" name="createUser" duration-ms="908" started-at="2021-03-14T14:00:41Z" data-provider="UserData" finished-at="2021-03-14T14:00:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User4444]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[P@ssw0rd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Started execution of test create user]]>
+            </line>
+            <line>
+              <![CDATA[/Account/v1/User]]>
+            </line>
+            <line>
+              <![CDATA[{"userID":"c720410c-5897-45c6-90d9-bb4276fb6dcd","username":"User4444","books":[]}]]>
+            </line>
+            <line>
+              <![CDATA[Verified response code 201]]>
+            </line>
+            <line>
+              <![CDATA[Verified content type application/json]]>
+            </line>
+            <line>
+              <![CDATA[Verify user name is response body]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createUser -->
+        <test-method status="PASS" signature="testAfterMethod(org.testng.ITestResult)[pri:0, instance:com.test.api.DataDrivenAPI@13c78c0b]" name="testAfterMethod" is-config="true" duration-ms="2" started-at="2021-03-14T14:00:42Z" finished-at="2021-03-14T14:00:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createUser status=SUCCESS method=DataDrivenAPI.createUser(java.lang.String, java.lang.String)[pri:0, instance:com.test.api.DataDrivenAPI@13c78c0b] output=Started execution of test create user]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAfterMethod -->
+      </class> <!-- com.test.api.DataDrivenAPI -->
+      <class name="com.test.api.Account">
+        <test-method status="PASS" signature="before()[pri:0, instance:com.test.api.Account@50f8360d]" name="before" is-config="true" duration-ms="2476" started-at="2021-03-14T13:59:04Z" finished-at="2021-03-14T13:59:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.api.Account@50f8360d]" name="setup" is-config="true" duration-ms="1754" started-at="2021-03-14T14:00:23Z" finished-at="2021-03-14T14:00:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setupMethod(java.lang.reflect.Method)[pri:0, instance:com.test.api.Account@50f8360d]" name="setupMethod" is-config="true" duration-ms="1" started-at="2021-03-14T14:00:25Z" finished-at="2021-03-14T14:00:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.api.Account.createUser()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupMethod -->
+        <test-method status="PASS" signature="createUser()[pri:0, instance:com.test.api.Account@50f8360d]" name="createUser" duration-ms="7380" started-at="2021-03-14T14:00:25Z" finished-at="2021-03-14T14:00:32Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Started execution of test create user]]>
+            </line>
+            <line>
+              <![CDATA[/Account/v1/User]]>
+            </line>
+            <line>
+              <![CDATA[{"userID":"c5facf8c-01cf-474d-82ae-f262735b7a3d","username":"test1615710625569","books":[]}]]>
+            </line>
+            <line>
+              <![CDATA[Verified response code 201]]>
+            </line>
+            <line>
+              <![CDATA[Verified content type application/json]]>
+            </line>
+            <line>
+              <![CDATA[Verify user name is response body]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createUser -->
+        <test-method status="PASS" signature="getAth()[pri:0, instance:com.test.api.Account@50f8360d]" name="getAth" duration-ms="856" started-at="2021-03-14T14:00:32Z" finished-at="2021-03-14T14:00:33Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Started execution of test get auth]]>
+            </line>
+            <line>
+              <![CDATA[/Account/v1/Authorized]]>
+            </line>
+            <line>
+              <![CDATA[true]]>
+            </line>
+            <line>
+              <![CDATA[Verified response code 200]]>
+            </line>
+            <line>
+              <![CDATA[Verified content type application/json]]>
+            </line>
+            <line>
+              <![CDATA[Verify response is true]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getAth -->
+        <test-method status="PASS" signature="setupMethod(java.lang.reflect.Method)[pri:0, instance:com.test.api.Account@50f8360d]" name="setupMethod" is-config="true" duration-ms="0" started-at="2021-03-14T14:00:32Z" finished-at="2021-03-14T14:00:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.api.Account.getAth()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupMethod -->
+        <test-method status="PASS" signature="testAfterMethod(org.testng.ITestResult)[pri:0, instance:com.test.api.Account@50f8360d]" name="testAfterMethod" is-config="true" duration-ms="0" started-at="2021-03-14T14:00:32Z" finished-at="2021-03-14T14:00:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createUser status=SUCCESS method=Account.createUser()[pri:0, instance:com.test.api.Account@50f8360d] output=Started execution of test create user]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAfterMethod -->
+        <test-method status="PASS" signature="testAfterMethod(org.testng.ITestResult)[pri:0, instance:com.test.api.Account@50f8360d]" name="testAfterMethod" is-config="true" duration-ms="1" started-at="2021-03-14T14:00:33Z" finished-at="2021-03-14T14:00:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getAth status=SUCCESS method=Account.getAth()[pri:0, instance:com.test.api.Account@50f8360d] output=Started execution of test get auth]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAfterMethod -->
+        <test-method status="PASS" signature="setupMethod(java.lang.reflect.Method)[pri:0, instance:com.test.api.Account@50f8360d]" name="setupMethod" is-config="true" duration-ms="0" started-at="2021-03-14T14:00:33Z" finished-at="2021-03-14T14:00:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.api.Account.verifyUnAuthUser()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupMethod -->
+        <test-method status="PASS" signature="verifyUnAuthUser()[pri:0, instance:com.test.api.Account@50f8360d]" name="verifyUnAuthUser" duration-ms="886" started-at="2021-03-14T14:00:33Z" finished-at="2021-03-14T14:00:34Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Started execution of test create user without body]]>
+            </line>
+            <line>
+              <![CDATA[/Account/v1/User]]>
+            </line>
+            <line>
+              <![CDATA[{"code":"1200","message":"UserName and Password required."}]]>
+            </line>
+            <line>
+              <![CDATA[Verify user name is response body]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyUnAuthUser -->
+        <test-method status="PASS" signature="testAfterMethod(org.testng.ITestResult)[pri:0, instance:com.test.api.Account@50f8360d]" name="testAfterMethod" is-config="true" duration-ms="0" started-at="2021-03-14T14:00:34Z" finished-at="2021-03-14T14:00:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUnAuthUser status=SUCCESS method=Account.verifyUnAuthUser()[pri:0, instance:com.test.api.Account@50f8360d] output=Started execution of test create user without body]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAfterMethod -->
+        <test-method status="FAIL" signature="getUserById()[pri:0, instance:com.test.api.Account@50f8360d]" name="getUserById" duration-ms="940" started-at="2021-03-14T14:00:34Z" depends-on-methods="com.test.api.Account.createUser" finished-at="2021-03-14T14:00:35Z">
+          <exception class="junit.framework.AssertionFailedError">
+            <message>
+              <![CDATA[expected:<200> but was:<401>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError: expected:<200> but was:<401>
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.failNotEquals(Assert.java:287)
+	at junit.framework.Assert.assertEquals(Assert.java:67)
+	at junit.framework.Assert.assertEquals(Assert.java:199)
+	at junit.framework.Assert.assertEquals(Assert.java:205)
+	at com.framework.util.BaseAPITest.verifyResponseCodeAndContentType(BaseAPITest.java:148)
+	at com.test.api.Account.getUserById(Account.java:86)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Started execution of test get user details for id c5facf8c-01cf-474d-82ae-f262735b7a3d]]>
+            </line>
+            <line>
+              <![CDATA[/Account/v1/User]]>
+            </line>
+            <line>
+              <![CDATA[{"code":"1200","message":"User not authorized!"}]]>
+            </line>
+            <line>
+              <![CDATA[Verified response code 200]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getUserById -->
+        <test-method status="PASS" signature="setupMethod(java.lang.reflect.Method)[pri:0, instance:com.test.api.Account@50f8360d]" name="setupMethod" is-config="true" duration-ms="0" started-at="2021-03-14T14:00:34Z" finished-at="2021-03-14T14:00:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.api.Account.getUserById()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupMethod -->
+        <test-method status="PASS" signature="testAfterMethod(org.testng.ITestResult)[pri:0, instance:com.test.api.Account@50f8360d]" name="testAfterMethod" is-config="true" duration-ms="1" started-at="2021-03-14T14:00:35Z" finished-at="2021-03-14T14:00:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getUserById status=FAILURE method=Account.getUserById()[pri:0, instance:com.test.api.Account@50f8360d] output=Started execution of test get user details for id c5facf8c-01cf-474d-82ae-f262735b7a3d]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAfterMethod -->
+        <test-method status="FAIL" signature="deletetUser()[pri:0, instance:com.test.api.Account@50f8360d]" name="deletetUser" duration-ms="850" started-at="2021-03-14T14:00:35Z" depends-on-methods="com.test.api.Account.getUserById" finished-at="2021-03-14T14:00:36Z">
+          <exception class="junit.framework.AssertionFailedError">
+            <message>
+              <![CDATA[expected:<200> but was:<401>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError: expected:<200> but was:<401>
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.failNotEquals(Assert.java:287)
+	at junit.framework.Assert.assertEquals(Assert.java:67)
+	at junit.framework.Assert.assertEquals(Assert.java:199)
+	at junit.framework.Assert.assertEquals(Assert.java:205)
+	at com.framework.util.BaseAPITest.verifyResponseCodeAndContentType(BaseAPITest.java:148)
+	at com.test.api.Account.deletetUser(Account.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Started execution of test delete user for id c5facf8c-01cf-474d-82ae-f262735b7a3d]]>
+            </line>
+            <line>
+              <![CDATA[/Account/v1/User]]>
+            </line>
+            <line>
+              <![CDATA[{"code":"1200","message":"User not authorized!"}]]>
+            </line>
+            <line>
+              <![CDATA[Verified response code 200]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deletetUser -->
+        <test-method status="PASS" signature="setupMethod(java.lang.reflect.Method)[pri:0, instance:com.test.api.Account@50f8360d]" name="setupMethod" is-config="true" duration-ms="0" started-at="2021-03-14T14:00:35Z" finished-at="2021-03-14T14:00:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.api.Account.deletetUser()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupMethod -->
+        <test-method status="PASS" signature="testAfterMethod(org.testng.ITestResult)[pri:0, instance:com.test.api.Account@50f8360d]" name="testAfterMethod" is-config="true" duration-ms="1" started-at="2021-03-14T14:00:36Z" finished-at="2021-03-14T14:00:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deletetUser status=FAILURE method=Account.deletetUser()[pri:0, instance:com.test.api.Account@50f8360d] output=Started execution of test delete user for id c5facf8c-01cf-474d-82ae-f262735b7a3d]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAfterMethod -->
+        <test-method status="PASS" signature="tearDownSuite()[pri:0, instance:com.test.api.Account@50f8360d]" name="tearDownSuite" is-config="true" duration-ms="169" started-at="2021-03-14T14:00:43Z" finished-at="2021-03-14T14:00:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownSuite -->
+      </class> <!-- com.test.api.Account -->
+    </test> <!-- APITests -->
+  </suite> <!-- TestSuite -->
+</testng-results>

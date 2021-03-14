@@ -1,0 +1,4 @@
+com\test\api\DataDrivenAPI.class
+com\test\selenium\Login.class
+com\test\api\Account.class
+com\test\selenium\AddVerifyBook.class
